@@ -460,9 +460,7 @@ export default function App() {
 
                         {/* Logo */}
                         <Link to="/" aria-label="QBL Consulting — home" className="flex items-center gap-3 shrink-0 z-50 group">
-                            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-800 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/25 group-hover:shadow-blue-600/40 transition-shadow">
-                                <span className="text-white font-black text-xs tracking-tighter disp">QBL</span>
-                            </div>
+                            <img src="/assets/qbl-logo.png" alt="QBL Logo" className="w-10 h-10 object-contain" />
                             <div className="flex flex-col leading-none">
                                 <span className="disp font-black text-[17px] tracking-wide text-slate-900 leading-none">CONSULTING</span>
                                 <span className="text-[9px] font-bold tracking-[0.25em] text-orange-500 uppercase mt-0.5">Enterprise Solutions</span>
@@ -608,8 +606,8 @@ export default function App() {
                             <div className="absolute inset-0 flex items-center justify-center" aria-hidden="true">
                                 <div className="w-72 h-72 rounded-full bg-gradient-to-br from-blue-600/15 to-blue-900/5 border border-blue-500/15 flex items-center justify-center">
                                     <div className="w-44 h-44 rounded-full bg-gradient-to-br from-blue-600/25 to-indigo-600/15 border border-blue-400/25 flex items-center justify-center">
-                                        <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-2xl shadow-blue-600/50">
-                                            <span className="text-white font-black text-lg disp">QBL</span>
+                                        <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-blue-800 flex items-center justify-center shadow-2xl shadow-blue-600/50">
+                                            <img src="/assets/qbl-logo.png" alt="QBL" className="w-12 h-12 object-contain" />
                                         </div>
                                     </div>
                                 </div>
@@ -957,7 +955,7 @@ export default function App() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-14">
                         <div className="sm:col-span-2">
                             <div className="flex items-center gap-3 mb-5">
-                                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-800 rounded-xl flex items-center justify-center text-white font-black text-xs shadow-md shadow-blue-500/30 disp">QBL</div>
+                                <img src="/assets/qbl-logo.png" alt="QBL Logo" className="w-10 h-10 object-contain" />
                                 <div className="flex flex-col leading-none">
                                     <span className="disp font-black text-[17px] tracking-wide text-slate-900">CONSULTING</span>
                                     <span className="text-[9px] font-bold tracking-[0.25em] text-orange-500 uppercase mt-0.5">Enterprise Solutions</span>

@@ -264,9 +264,7 @@ export const Navbar = ({ activePage = "" }) => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
                     {/* Logo */}
                     <a href="/" aria-label="QBL Consulting home" className="flex items-center gap-3 shrink-0 z-50 group">
-                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-800 rounded-xl flex items-center justify-center shadow-lg shadow-blue-600/25 group-hover:shadow-blue-600/40 transition-shadow">
-                            <span className="text-white font-black text-xs tracking-tighter disp">QBL</span>
-                        </div>
+                        <img src="/assets/qbl-logo.png" alt="QBL Logo" className="w-10 h-10 object-contain" />
                         <div className="flex flex-col leading-none">
                             <span className="disp font-black text-[17px] tracking-wide text-slate-900 leading-none">CONSULTING</span>
                             <span className="text-[9px] font-bold tracking-[0.25em] text-orange-500 uppercase mt-0.5">Enterprise Solutions</span>
@@ -343,7 +341,7 @@ export const Footer = () => (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-14">
                 <div className="sm:col-span-2">
                     <div className="flex items-center gap-3 mb-5">
-                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-800 rounded-xl flex items-center justify-center text-white font-black text-xs shadow-md shadow-blue-500/30 disp">QBL</div>
+                        <img src="/assets/qbl-logo.png" alt="QBL Logo" className="w-10 h-10 object-contain" />
                         <div className="flex flex-col leading-none">
                             <span className="disp font-black text-[17px] tracking-wide text-slate-900">CONSULTING</span>
                             <span className="text-[9px] font-bold tracking-[0.25em] text-orange-500 uppercase mt-0.5">Enterprise Solutions</span>
