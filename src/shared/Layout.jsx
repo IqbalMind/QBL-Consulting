@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import {
-    Menu, X, ChevronDown, MessageCircle, Headphones, LogIn,
+    Menu, X, ChevronDown, MessageCircle, Headphones,
     Settings, Building2, TrendingUp, ArrowRight, Phone, Mail, Clock,
     Linkedin, Twitter, Facebook, Instagram, ChevronRight,
     BarChart3, ShieldCheck, Cpu, Handshake, Landmark, Factory,
@@ -300,9 +300,6 @@ export const Navbar = ({ activePage = "" }) => {
                         </a>
                         <button className="flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium transition-all">
                             <Headphones className="w-4 h-4" /> Support
-                        </button>
-                        <button className="flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-full text-sm font-medium transition-all">
-                            <LogIn className="w-4 h-4" /> Login
                         </button>
                     </div>
 
