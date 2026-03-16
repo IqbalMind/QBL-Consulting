@@ -49,18 +49,18 @@ export const NAV_MENU = [
         columns: [
             {
                 heading: "Sectors", items: [
-                    { icon: Landmark, label: "Banking & Finance", desc: "Fintech & regulatory compliance", href: "#" },
-                    { icon: Factory, label: "Manufacturing", desc: "Lean ops & Industry 4.0", href: "#" },
-                    { icon: HeartPulse, label: "Healthcare", desc: "Digital health & ops", href: "#" },
-                    { icon: ShoppingBag, label: "Retail & FMCG", desc: "Omnichannel & supply chain", href: "#" },
+                    { icon: Landmark, label: "Banking & Finance", desc: "Fintech & regulatory compliance", href: "/industries/banking-and-finance" },
+                    { icon: Factory, label: "Manufacturing", desc: "Lean ops & Industry 4.0", href: "/industries/manufacturing" },
+                    { icon: HeartPulse, label: "Healthcare", desc: "Digital health & ops", href: "/industries/healthcare" },
+                    { icon: ShoppingBag, label: "Retail & FMCG", desc: "Omnichannel & supply chain", href: "/industries/retail-and-fmcg" },
                 ]
             },
             {
                 heading: "More Sectors", items: [
-                    { icon: Plane, label: "Logistics & Transport", desc: "Fleet & route optimization", href: "#" },
-                    { icon: Globe2, label: "Telecoms & Media", desc: "Digital infrastructure", href: "#" },
-                    { icon: Layers, label: "Technology", desc: "Scaling & product strategy", href: "#" },
-                    { icon: Workflow, label: "Public Sector", desc: "Government transformation", href: "#" },
+                    { icon: Plane, label: "Logistics & Transport", desc: "Fleet & route optimization", href: "/industries/logistics-and-transport" },
+                    { icon: Globe2, label: "Telecoms & Media", desc: "Digital infrastructure", href: "/industries/telecoms-and-media" },
+                    { icon: Layers, label: "Technology", desc: "Scaling & product strategy", href: "/industries/technology" },
+                    { icon: Workflow, label: "Public Sector", desc: "Government transformation", href: "/industries/public-sector" },
                 ]
             },
         ],
@@ -298,9 +298,9 @@ export const Navbar = ({ activePage = "" }) => {
                         <a href="/contact" className="flex items-center gap-1.5 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-bold transition-all shadow-md shadow-emerald-500/25">
                             <MessageCircle className="w-4 h-4" /> Consult Now
                         </a>
-                        <button className="flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium transition-all">
+                        <a href="/support" className="flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium transition-all">
                             <Headphones className="w-4 h-4" /> Support
-                        </button>
+                        </a>
                     </div>
 
                     {/* Mobile toggle */}
@@ -317,7 +317,7 @@ export const Navbar = ({ activePage = "" }) => {
                         {NAV_MENU.map((menu, i) => <MobileMenuItem key={i} menu={menu} />)}
                         <div className="pt-4 border-t border-slate-100 space-y-2 mt-2">
                             <a href="/contact" className="block w-full bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-3 rounded-xl text-sm font-bold text-center transition-colors">Consult Now</a>
-                            <button className="w-full bg-blue-50 text-blue-700 px-4 py-3 rounded-xl text-sm font-medium">Client Support</button>
+                            <a href="/support" className="block w-full text-center bg-blue-50 text-blue-700 px-4 py-3 rounded-xl text-sm font-medium">Client Support</a>
                         </div>
                         <div className="pt-4 border-t border-slate-100 grid grid-cols-2 gap-2 text-xs text-slate-500">
                             <a href={`tel:${CONTACT.phoneHref}`} className="flex items-center gap-1.5 py-2"><Phone className="w-3 h-3" />{CONTACT.phone}</a>
@@ -359,7 +359,7 @@ export const Footer = () => (
                 <div>
                     <h4 className="disp font-bold text-slate-900 mb-5">Company</h4>
                     <ul className="space-y-3">
-                        {[{ l: "About Us", h: "/about" }, { l: "Contact Us", h: "/contact" }, { l: "Portfolio", h: "#" }, { l: "Careers", h: "#" }].map(({ l, h }) => (
+                        {[{ l: "About Us", h: "/about" }, { l: "Contact Us", h: "/contact" }, { l: "Portfolio", h: "/portfolio" }, { l: "Careers", h: "/careers" }].map(({ l, h }) => (
                             <li key={l}><a href={h} className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-blue-600 transition-colors"><ChevronRight className="w-3.5 h-3.5 text-orange-400 shrink-0" />{l}</a></li>
                         ))}
                     </ul>
@@ -367,8 +367,8 @@ export const Footer = () => (
                 <div>
                     <h4 className="disp font-bold text-slate-900 mb-5">Support</h4>
                     <ul className="space-y-3">
-                        {["Help Center", "Terms & Conditions", "Privacy Policy", "Cookie Policy"].map(l => (
-                            <li key={l}><a href="#" className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-blue-600 transition-colors"><ChevronRight className="w-3.5 h-3.5 text-orange-400 shrink-0" />{l}</a></li>
+                        {[{ l: "Help Center", h: "/help-center" }, { l: "Terms & Conditions", h: "/terms-and-conditions" }, { l: "Privacy Policy", h: "/privacy-policy" }, { l: "Cookie Policy", h: "/cookie-policy" }].map(({ l, h }) => (
+                            <li key={l}><a href={h} className="flex items-center gap-1.5 text-sm text-slate-500 hover:text-blue-600 transition-colors"><ChevronRight className="w-3.5 h-3.5 text-orange-400 shrink-0" />{l}</a></li>
                         ))}
                     </ul>
                 </div>

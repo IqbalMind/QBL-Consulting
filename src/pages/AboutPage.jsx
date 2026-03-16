@@ -28,7 +28,7 @@ const MILESTONES = [
 ];
 
 const TEAM = [
-    { name: "Iqbal Maulana", role: "Founder & CEO", bio: "15+ years leading enterprise transformations across SEA. Former McKinsey alumni.", initial: "IM", color: "from-blue-500 to-blue-700" },
+    { name: "Muhamad Iqbal Nurmanditya", role: "Founder & CEO, Business Analyst & IT Consultant", bio: "Simplifying complex systems through smart integrations to deliver enduring enterprise transformations.", initial: "MI", color: "from-blue-500 to-blue-700" },
     { name: "Dewi Rahayu", role: "Managing Director", bio: "Specialist in digital transformation and ERP implementations for manufacturing sector.", initial: "DR", color: "from-emerald-500 to-teal-600" },
     { name: "Budi Santoso", role: "Head of Business Strategy", bio: "Ex-BCG consultant with deep expertise in M&A advisory and market expansion.", initial: "BS", color: "from-violet-500 to-purple-600" },
     { name: "Ayu Permata", role: "Head of Human Capital", bio: "Organizational psychologist and leadership coach with 12 years of change management.", initial: "AP", color: "from-amber-500 to-orange-500" },
